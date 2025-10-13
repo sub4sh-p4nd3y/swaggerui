@@ -3,111 +3,53 @@ info:
   version: 1.0.0
   title: Login Page
   description: '<!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Simple Login</title>
-    <style>
-      :root { --bg:#f5f7fb; --card:#ffffff; --accent:#2563eb; --muted:#6b7280; }
-      *{box-sizing:border-box}
-      body{
-        margin:0;
-        font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-        background:linear-gradient(180deg,var(--bg),#e9eef8);
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        min-height:100vh;
-        padding:24px;
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo Login (Safe)</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f3f6fb}
+    .card{background:white;padding:24px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);width:320px}
+    label{display:block;margin:8px 0 4px;font-size:14px}
+    input{width:100%;padding:8px;border:1px solid #dfe6f1;border-radius:6px}
+    button{margin-top:12px;width:100%;padding:10px;border-radius:8px;border:0;background:#2563eb;color:#fff;cursor:pointer}
+    .note{font-size:13px;color:#555;margin-top:8px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h2>Demo Login</h2>
+    <form id="loginForm" autocomplete="off">
+      <label for="user">Username or email</label>
+      <input id="user" name="user" type="text" placeholder="you@example.com" required>
+      <label for="pw">Password</label>
+      <input id="pw" name="pw" type="password" placeholder="••••••••" required>
+      <button type="submit">Sign in</button>
+      <p class="note">This is a demo page — credentials are <strong>not</strong> sent anywhere.</p>
+    </form>
+    <div id="message" style="display:none;margin-top:12px;color:#d97706"></div>
+  </main>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const user = document.getElementById('user').value.trim();
+      const pw = document.getElementById('pw').value;
+      if(!user || !pw){
+        document.getElementById('message').textContent = 'Please fill both fields.';
+        document.getElementById('message').style.display = 'block';
+        return;
       }
-      .card{
-        background:var(--card);
-        width:100%;
-        max-width:420px;
-        padding:28px;
-        border-radius:12px;
-        box-shadow:0 8px 30px rgba(18,38,63,0.08);
-      }
-      h1{margin:0 0 8px;font-size:20px}
-      p.lead{margin:0 0 18px;color:var(--muted);font-size:14px}
-      label{display:block;font-size:13px;margin-bottom:6px;color:#111827}
-      input[type="text"],input[type="password"]{
-        width:100%;
-        padding:10px 12px;
-        border:1px solid #e6e9ef;
-        border-radius:8px;
-        font-size:15px;
-      }
-      .row{margin-bottom:14px}
-      .actions{display:flex;align-items:center;justify-content:space-between;gap:12px}
-      button{
-        background:var(--accent);
-        color:#fff;
-        border:0;
-        padding:10px 14px;
-        border-radius:10px;
-        font-size:15px;
-        cursor:pointer;
-      }
-      button.secondary{
-        background:transparent;
-        color:var(--muted);
-        border:1px solid #e6e9ef;
-      }
-      .small{font-size:13px;color:var(--muted)}
-      .form-foot{margin-top:12px;display:flex;justify-content:space-between;align-items:center}
-      @media (max-width:420px){ .card{padding:20px} }
-    </style>
-  </head>
-  <body>
-    <main class="card" role="main" aria-labelledby="loginHeading">
-      <h1 id="loginHeading">Sign in</h1>
-      <p class="lead">Enter your credentials to access your account.</p>
 
-      <form id="loginForm" action="#" method="post" novalidate>
-        <div class="row">
-          <label for="email">Email or username</label>
-          <input id="email" name="email" type="text" autocomplete="username" required
-                 placeholder="you@example.com" />
-        </div>
-
-        <div class="row">
-          <label for="password">Password</label>
-          <input id="password" name="password" type="password" autocomplete="current-password" required
-                 placeholder="••••••••" />
-        </div>
-
-        <div class="form-foot">
-          <label class="small"><input type="checkbox" name="remember" /> Remember me</label>
-          <a class="small" href="#" onclick="alert('Forgot password flow not implemented');return false;">Forgot?</a>
-        </div>
-
-        <div style="height:14px"></div>
-
-        <div class="actions">
-          <button type="submit">Sign in</button>
-          <button type="button" class="secondary" onclick="alert('Register flow not implemented')">Register</button>
-        </div>
-      </form>
-
-      <script>
-        // Example client-side handler: prevent real submission and validate simple rules.
-        document.getElementById('loginForm').addEventListener('submit', function(e){
-          e.preventDefault();
-          const email = document.getElementById('email').value.trim();
-          const pw = document.getElementById('password').value;
-          if(!email || !pw){
-            alert('Please fill both fields.');
-            return;
-          }
-          // In production, send credentials over HTTPS to your server for authentication.
-          alert('Demo only: credentials not sent.\\nEmail/username: ' + email);
-        });
-      </script>
-    </main>
-  </body>
-  </html>
+      // Demo-only: pretend to validate locally
+      // IMPORTANT: In real apps, always validate on the server over HTTPS.
+      // After "successful login" redirect to a safe placeholder:
+      window.location.href = 'https://example.com';
+    });
+  </script>
+</body>
+</html>
 
 
   '
