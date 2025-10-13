@@ -1,20 +1,7 @@
 {
-  "swagger": "2.0",
-  "info": {
-    "title": "XSS Test",
-    "version": "1.0"
-  },
-  "paths": {
-    "/xss": {
-      "get": {
-        "summary": "XSS Test",
-        "description": "<a href='https://evil.com'>click here</a>",
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    }
-  }
+  "name": "login-page-yaml-wrapper",
+  "description": "JSON wrapping the login_page.yaml file as a string",
+  "filename": "login_page.yaml",
+  "mime_type": "text/yaml",
+  "yaml_content": "name: simple-login-page\ndescription: \"YAML wrapping a simple responsive HTML login page\"\nfilename: login.html\nmime_type: text/html\ncontent: |\n  <!doctype html>\n  <html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    <title>Simple Login</title>\n    <style>\n      :root { --bg:#f5f7fb; --card:#ffffff; --accent:#2563eb; --muted:#6b7280; }\n      *{box-sizing:border-box}\n      body{\n        margin:0;\n        font-family:system-ui,-apple-system,Segoe UI,Roboto,\"Helvetica Neue\",Arial;\n        background:linear-gradient(180deg,var(--bg),#e9eef8);\n        display:flex;\n        align-items:center;\n        justify-content:center;\n        min-height:100vh;\n        padding:24px;\n      }\n      .card{\n        background:var(--card);\n        width:100%;\n        max-width:420px;\n        padding:28px;\n        border-radius:12px;\n        box-shadow:0 8px 30px rgba(18,38,63,0.08);\n      }\n      h1{margin:0 0 8px;font-size:20px}\n      p.lead{margin:0 0 18px;color:var(--muted);font-size:14px}\n      label{display:block;font-size:13px;margin-bottom:6px;color:#111827}\n      input[type=\"text\"],input[type=\"password\"]{\n        width:100%;\n        padding:10px 12px;\n        border:1px solid #e6e9ef;\n        border-radius:8px;\n        font-size:15px;\n      }\n      .row{margin-bottom:14px}\n      .actions{display:flex;align-items:center;justify-content:space-between;gap:12px}\n      button{\n        background:var(--accent);\n        color:#fff;\n        border:0;\n        padding:10px 14px;\n        border-radius:10px;\n        font-size:15px;\n        cursor:pointer;\n      }\n      button.secondary{\n        background:transparent;\n        color:var(--muted);\n        border:1px solid #e6e9ef;\n      }\n      .small{font-size:13px;color:var(--muted)}\n      .form-foot{margin-top:12px;display:flex;justify-content:space-between;align-items:center}\n      @media (max-width:420px){ .card{padding:20px} }\n    </style>\n  </head>\n  <body>\n    <main class=\"card\" role=\"main\" aria-labelledby=\"loginHeading\">\n      <h1 id=\"loginHeading\">Sign in</h1>\n      <p class=\"lead\">Enter your credentials to access your account.</p>\n\n      <form id=\"loginForm\" action=\"#\" method=\"post\" novalidate>\n        <div class=\"row\">\n          <label for=\"email\">Email or username</label>\n          <input id=\"email\" name=\"email\" type=\"text\" autocomplete=\"username\" required placeholder=\"you@example.com\" />\n        </div>\n\n        <div class=\"row\">\n          <label for=\"password\">Password</label>\n          <input id=\"password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required placeholder=\"••••••••\" />\n        </div>\n\n        <div class=\"form-foot\">\n          <label class=\"small\"><input type=\"checkbox\" name=\"remember\" /> Remember me</label>\n          <a class=\"small\" href=\"#\" onclick=\"alert('Forgot password flow not implemented');return false;\">Forgot?</a>\n        </div>\n\n        <div style=\"height:14px\"></div>\n\n        <div class=\"actions\">\n          <button type=\"submit\">Sign in</button>\n          <button type=\"button\" class=\"secondary\" onclick=\"alert('Register flow not implemented')\">Register</button>\n        </div>\n      </form>\n\n      <script>\n        document.getElementById('loginForm').addEventListener('submit', function(e){\n          e.preventDefault();\n          const email = document.getElementById('email').value.trim();\n          const pw = document.getElementById('password').value;\n          if(!email || !pw){\n            alert('Please fill both fields.');\n            return;\n          }\n          alert('Demo only: credentials not sent.\\nEmail/username: ' + email);\n        });\n      </script>\n    </main>\n  </body>\n  </html>"
 }
