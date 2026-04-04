@@ -14,16 +14,9 @@ info:
 <div class="heading">
   <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
   <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <a href="javascript%0d%0a:alert(1)">Click Here</a>
+    <a href="//evil.com">Click Here</a>
   </div>
 </div>
-
-<!-- Footer with your name -->
-<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
-  
-</div>
-
-
   '
 paths:
   /:
