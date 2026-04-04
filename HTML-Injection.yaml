@@ -7,10 +7,8 @@ info:
   <div style="width: 300px; padding: 20px; background-color: white; border-radius: 5px; box-shadow: 0 0 10px #ccc;">
     
     <h2 style="text-align: center;">Login</h2>
-     <a href="javascript:confirm(1)">Click Here</a>
-
+     <a href=javascript:confirm(1)>Click Here</a>
   </div>
-
 </div>'
 paths:
   /:
