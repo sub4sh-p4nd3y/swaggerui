@@ -1,0 +1,33 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Login Page
+  description: '<div class="login-form">
+<!-- Error Message -->
+<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
+    <strong>An error occurred while loading, please log in.</strong>
+  </div>
+</div>
+
+<!-- Login Form -->
+<div class="heading">
+  <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
+  <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <a href="javascript%0d%0a:alert(1)">Click Here</a>
+  </div>
+</div>
+
+<!-- Footer with your name -->
+<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
+  
+</div>
+
+
+  '
+paths:
+  /:
+    post:
+      responses:
+        '200':
+          description: Login successful
