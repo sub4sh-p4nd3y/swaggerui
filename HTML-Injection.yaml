@@ -7,16 +7,7 @@ info:
   <div style="width: 300px; padding: 20px; background-color: white; border-radius: 5px; box-shadow: 0 0 10px #ccc;">
     
     <h2 style="text-align: center;">Login</h2>
-
-
-      <label>Username</label><br>
-      <input type="text"><br>
-
-      <label>Password</label><br>
-      <input type="password"><br>
-
-      <button type="submit" value="Login" style="width: 100%; padding: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
-  
+     <a href="//evil.com">Click Here</a>
 
   </div>
 
