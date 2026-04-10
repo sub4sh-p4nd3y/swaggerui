@@ -25,7 +25,7 @@ info:
       </div>
       <div class="form-group" style="margin-top: 20px;">
         <input type="submit" value="Login" class="btn btn-default" style="width: 100%; padding: 12px; background-color: #5cb85c; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">
-         <a href="javascript:alert(1)">Click Here</a>
+      </div>
     </form>
   </div>
 </div>
