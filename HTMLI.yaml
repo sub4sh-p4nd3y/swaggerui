@@ -13,8 +13,12 @@ info:
 <!-- Login Form -->
 <div class="heading">
   <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
-    <a href=//evil.com>CLick here</a>
+  <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+   <h1>Hacked</h1
+  </div>
 </div>
+
+
   '
 paths:
   /:
