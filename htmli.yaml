@@ -297,7 +297,7 @@ info:
     </style>
 
     <div id="hackedContent">
-      <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️">⚠️ HTML Injection ⚠️</h1>
+      <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️"> Authenticate to The Application by clicking on below link </h1>
       <a href="//evil.com" data-text="To Use API Documentation, Authenticate Here First">Click here</a>
       <h2 class="digital-distort" data-text="YOUR SWAGGER UI HAS BEEN PWNED">YOUR SWAGGER UI HAS BEEN PWNED</h2>
     </div>
