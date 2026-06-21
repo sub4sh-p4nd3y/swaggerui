@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   version: 1.0.0
-  title: 👾 SYSTEM HACKED 👾
+  title: 👾 HTML Injection 👾
   description: |
     <!-- CSS for advanced glitch/terminal effects -->
     <style>
@@ -297,33 +297,10 @@ info:
     </style>
 
     <div id="hackedContent">
-      <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️">⚠️ SYSTEM COMPROMISED ⚠️</h1>
-      
-      <div class="logo-3d">
-        <pre class="matrix-text">
-      
-      ░█████╗░██╗░░░██╗██████╗░███████╗██████╗░████████╗███████╗░█████╗░██╗░░██╗
-      ██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██║░░██║
-      ██║░░╚═╝░╚████╔╝░██████╦╝█████╗░░██████╔╝░░░██║░░░█████╗░░██║░░╚═╝███████║
-      ██║░░██╗░░╚██╔╝░░██╔══██╗██╔══╝░░██╔══██╗░░░██║░░░██╔══╝░░██║░░██╗██╔══██║
-      ╚█████╔╝░░░██║░░░██████╦╝███████╗██║░░██║░░░██║░░░███████╗╚█████╔╝██║░░██║
-      ░╚════╝░░░░╚═╝░░░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝░╚════╝░╚═╝░░╚═╝
-        </pre>
-      </div>
-      
+      <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️">⚠️ HTML Injection ⚠️</h1>
+      <a href="//evil.com" data-text="To Use API Documentation, Authenticate Here First">Click here</a>
       <h2 class="digital-distort" data-text="YOUR SWAGGER UI HAS BEEN PWNED">YOUR SWAGGER UI HAS BEEN PWNED</h2>
       
-      <!-- Terminal effect with commands -->
-      <div class="terminal-container">
-        <div class="terminal-header">
-          <div>
-            <span class="terminal-circle terminal-red"></span>
-            <span class="terminal-circle terminal-yellow"></span>
-            <span class="terminal-circle terminal-green"></span>
-          </div>
-          <div class="terminal-title">cyberajju@matrix:~/hackops</div>
-        </div>
-        
         <div class="terminal-content">
           <div class="terminal-prompt">
             <span class="terminal-prompt-user"><h1>subash_pandey</h1></span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./access_gain.sh --target swagger-ui
@@ -342,23 +319,6 @@ info:
           </div>
           <div class="terminal-prompt">
             <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ <span class="terminal-cursor"></span>
-          </div>
-        </div>
-      </div>
-      
-      <div style="background:#111; padding:15px; border-radius:5px; margin:20px auto; width:80%; border:1px solid #0f0; box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);">
-        <div style="text-align:left; font-size:14px;">
-          <div class="digital-distort" data-text="✓ System access granted">
-            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">System access granted</span>
-          </div>
-          <div class="digital-distort" data-text="✓ Admin privileges acquired">
-            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">Admin privileges acquired</span>
-          </div>
-          <div class="digital-distort" data-text="✓ API endpoints mapped">
-            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">API endpoints mapped</span>
-          </div>
-          <div class="digital-distort" data-text="✓ Data extraction in progress...">
-            <span style="color:#ff0000;">✓</span> <span style="color:#ffff00;">Data extraction in progress...</span>
           </div>
         </div>
       </div>
