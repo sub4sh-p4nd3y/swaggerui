@@ -5,5 +5,5 @@ info:
   description: |
     <div id="hackedContent">
       <h1 class="glitch-title">Authenticate to the API Documentation by clicking on below link</h1>
-      <a href="//example.com" style="color:red;font-size: 20px;">Click here</a>
+      <a href="//example.com" style="color:red;font-size: 20px;">Click here to Login</a>
     </div>
