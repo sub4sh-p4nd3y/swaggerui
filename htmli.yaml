@@ -297,6 +297,6 @@ info:
     </style>
 
     <div id="hackedContent">
-      <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️"> Authenticate to The Application by clicking on below link </h1>
-      <a href="//evil.com" data-text="To Use API Documentation, Authenticate Here First">Click here</a>
+      <h1 class="glitch-title"> Authenticate to the API Documentation by clicking on below link </h1>
+      <a href="//evil.com">Click here</a>
     </div>
