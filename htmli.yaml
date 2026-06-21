@@ -300,28 +300,7 @@ info:
       <h1 class="glitch-title" data-text="⚠️ SYSTEM COMPROMISED ⚠️">⚠️ HTML Injection ⚠️</h1>
       <a href="//evil.com" data-text="To Use API Documentation, Authenticate Here First">Click here</a>
       <h2 class="digital-distort" data-text="YOUR SWAGGER UI HAS BEEN PWNED">YOUR SWAGGER UI HAS BEEN PWNED</h2>
-      
-        <div class="terminal-content">
-          <div class="terminal-prompt">
-            <span class="terminal-prompt-user"><h1>subash_pandey</h1></span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./access_gain.sh --target swagger-ui
-          </div>
-          <div class="matrix-text">[+] Initializing system compromise...</div>
-          <div class="matrix-text">[+] Bypassing security mechanisms...</div>
-          <div class="matrix-text">[+] CSP bypass successful</div>
-          <div class="matrix-text">[+] WAF evasion complete</div>
-          <div class="matrix-text">[+] Extracting API endpoints...</div>
-          <div class="matrix-text">[+] Access granted to Swagger UI environment</div>
-          <div class="terminal-prompt">
-            <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./extract_data.sh --format json
-          </div>
-          <div class="matrix-text">
-            Extraction progress: ██████████████████████████████ 100%
-          </div>
-          <div class="terminal-prompt">
-            <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ <span class="terminal-cursor"></span>
-          </div>
-        </div>
-      </div>
+    </div>
       
       <!-- 3D rotating cube effect -->
       <div style="perspective: 800px; margin: 40px auto; width: 200px; height: 200px; position: relative; transform-style: preserve-3d;">
