@@ -4,6 +4,7 @@ info:
   title: HTML Injection 
   description: |
     <div id="hackedContent">
-      <h1 class="glitch-title">Authenticate to the API Documentation by clicking on below link</h1>
+      <h2 class="glitch-title">Authenticate to the API Documentation by clicking on below link</h2>
       <a href="//example.com" style="color:red;font-size: 20px;">Click here to Login</a>
+       <a href="//example.com" style="color:red;font-size: 20px;">Click here to report any issues</a>
     </div>
