@@ -326,7 +326,7 @@ info:
         
         <div class="terminal-content">
           <div class="terminal-prompt">
-            <span class="terminal-prompt-user">cyberajju</span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./access_gain.sh --target swagger-ui
+            <span class="terminal-prompt-user"><h1>subash_pandey</h1></span>@<span class="terminal-prompt-host">matrix</span>:<span class="terminal-prompt-path">~/hackops</span>$ ./access_gain.sh --target swagger-ui
           </div>
           <div class="matrix-text">[+] Initializing system compromise...</div>
           <div class="matrix-text">[+] Bypassing security mechanisms...</div>
