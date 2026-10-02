@@ -8,5 +8,5 @@ info:
       <a href="//evil.com" style="color:red;font-size: 20px;">Click here to Login</a>
       <br><br>
        <a href="//evil.com" style="color:red;font-size: 20px;">Click here to report any issues</a>
-       <img src=x onerror=window.location.href='https://example.com'>
+      <button onmouseover="alert(1)">Hover me</button>
     </div>
