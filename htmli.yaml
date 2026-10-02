@@ -7,6 +7,5 @@ info:
       <h2 class="glitch-title">Authenticate to the API Documentation by clicking on below link</h2>
       <a href="//evil.com" style="color:red;font-size: 20px;">Click here to Login</a>
       <br><br>
-       <a href="//evil.com" style="color:red;font-size: 20px;">Click here to report any issues</a>
-      <button onmouseover="alert(1)">Hover me</button>
+       <a href="//evil.com" onmouseover="alert(1)" style="color:red;font-size: 20px;">Click here to report any issues</a>
     </div>
